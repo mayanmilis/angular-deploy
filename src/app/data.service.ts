@@ -16,12 +16,12 @@ export class DataService {
   }
 
   getFavorites() {
-    return this.http.get('http://localhost:5000/api/items');
+    return this.http.get('https://pacific-meadow-65559.herokuapp.com/api/items');
   }
   addToFavorites(value) {
-    return this.http.post('http://localhost:5000/api/items', value);
+    return this.http.post('https://pacific-meadow-65559.herokuapp.com/api/items', value);
   }
   removeFromFavorites(id) {
-    return this.http.delete(`http://localhost:5000/api/items/${id}`)
+    return this.http.delete(`https://pacific-meadow-65559.herokuapp.com/api/items/${id}`)
   }
 }
