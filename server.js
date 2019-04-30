@@ -41,5 +41,9 @@ mongoose
 
 app.use('/api/items', items)
 
+app.use('/timestamp', (req, res) => {
+    res.send(`${Date.now()}`);
+})
+
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 5000);
