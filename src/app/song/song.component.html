@@ -1,0 +1,22 @@
+<tr class='Tr'>
+  <div [style.background-color]='divStyle' class='Container' >
+      <td>{{index}}</td>
+      <td><img src={{img}}/></td>
+      <td id='title'>
+        <div><strong>{{title}}</strong></div>
+        <div id='Subtitle'>{{subtitle}}</div>
+      </td>
+      <td >
+        <div id='shazamIcon'>
+          <a href={{url}} target='_blank'>
+            <img src='http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c538.png'/>
+            <div>SHAZAM</div>
+          </a>
+        </div>
+        </td>
+      <td id='Favorites'>
+        <div id='favoritesImg' (click)="divClick()"><img src={{star}}></div>
+        <div>{{buttonNote}}</div>
+      </td>
+  </div>
+</tr>
